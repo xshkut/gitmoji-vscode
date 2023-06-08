@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Gitmoji](https://gitmoji.dev/) for your commit messages.
 
+## v1.3.0 (2023-06-08)
+
+### Features
+
+- Add description for gitmojis so they can be found by keywords
+
 ## v1.2.2 (2022-12-08)
 
 ### Bug Fixes
