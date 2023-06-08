@@ -5,6 +5,7 @@ interface gitmojiList {
     readonly emoji: any;
     readonly code: any;
     readonly description: any;
+    readonly searchText?: any;
 }
 
 let Gitmoji: Array<gitmojiList> = [
@@ -12,66 +13,79 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🎨',
         code: ':art:',
         description: vscode.l10n.t('Improve structure/format of the code'),
+        searchText: "palette pretty refactor art",
     },
     {
         emoji: '⚡️',
         code: ':zap:',
         description: vscode.l10n.t('Improve performance'),
+        searchText: "speed optimize zap flash",
     },
     {
         emoji: '🔥',
         code: ':fire:',
         description: vscode.l10n.t('Remove code or files'),
+        searchText: "delete fire clean",
     },
     {
         emoji: '🐛',
         code: ':bug:',
         description: vscode.l10n.t('Fix a bug'),
+        searchText: "worm",
     },
     {
         emoji: '🚑',
         code: ':ambulance:',
         description: vscode.l10n.t('Critical hotfix'),
+        searchText: "bug ambulance",
     },
     {
         emoji: '✨',
         code: ':sparkles:',
         description: vscode.l10n.t('Introduce new features'),
+        searchText: "add implement",
     },
     {
         emoji: '📝',
         code: ':memo:',
         description: vscode.l10n.t('Add or update documentation'),
+        searchText: "note doc",
     },
     {
         emoji: '🚀',
         code: ':rocket:',
         description: vscode.l10n.t('Deploy stuff'),
+        searchText: "rocket",
     },
     {
         emoji: '💄',
         code: ':lipstick:',
         description: vscode.l10n.t('Add or update the UI and style files'),
+        searchText: "lipstick",
     },
     {
         emoji: '🎉',
         code: ':tada:',
         description: vscode.l10n.t('Begin a project'),
+        searchText: "start init",
     },
     {
         emoji: '✅',
         code: ':white_check_mark:',
         description: vscode.l10n.t('Add, update, or pass tests'),
+        searchText: "check mark fix",
     },
     {
         emoji: '🔒️',
         code: ':lock:',
         description: vscode.l10n.t('Fix security issues'),
+        searchText: "lock secret",
     },
     {
         emoji: '🔐',
         code: ':closed_lock_with_key:',
         description: vscode.l10n.t('Add or update secrets'),
+        searchText: "lock secret",
     },
     {
         emoji: '🔖',
@@ -82,26 +96,31 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🚨',
         code: ':rotating_light:',
         description: vscode.l10n.t('Fix compiler/linter warnings'),
+        searchText: "alert light",
     },
     {
         emoji: '🚧',
         code: ':construction:',
         description: vscode.l10n.t('Work in progress'),
+        searchText: "wip",
     },
     {
         emoji: '💚',
         code: ':green_heart:',
         description: vscode.l10n.t('Fix CI Build'),
+        searchText: "green heart",
     },
     {
         emoji: '⬇️',
         code: ':arrow_down:',
         description: vscode.l10n.t('Downgrade dependencies'),
+        searchText: "import require",
     },
     {
         emoji: '⬆️',
         code: ':arrow_up:',
         description: vscode.l10n.t('Upgrade dependencies'),
+        searchText: "import require",
     },
     {
         emoji: '📌',
@@ -122,16 +141,19 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '♻️',
         code: ':recycle:',
         description: vscode.l10n.t('Refactor code'),
+        searchText: "structure rename clean read",
     },
     {
         emoji: '➕',
         code: ':heavy_plus_sign:',
         description: vscode.l10n.t('Add a dependency'),
+        searchText: "import require",
     },
     {
         emoji: '➖',
         code: ':heavy_minus_sign:',
         description: vscode.l10n.t('Remove a dependency'),
+        searchText: "import require",
     },
     {
         emoji: '🔧',
@@ -157,6 +179,7 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '💩',
         code: ':poop:',
         description: vscode.l10n.t('Write bad code that needs to be improved'),
+        searchText: "shit",
     },
     {
         emoji: '⏪',
@@ -227,11 +250,13 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🔊',
         code: ':loud_sound:',
         description: vscode.l10n.t('Add or update logs'),
+        searchText: "output",
     },
     {
         emoji: '🔇',
         code: ':mute:',
         description: vscode.l10n.t('Remove logs'),
+        searchText: "output",
     },
     {
         emoji: '👥',

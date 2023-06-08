@@ -25,17 +25,18 @@ export function activate(context: vscode.ExtensionContext) {
         }
 
         const items = emojis.map(emojiObj => {
-            const { description, code, emoji } = emojiObj;
+            const { description, code, emoji, searchText } = emojiObj;
             const displayCode = showEmojiCode ? code : '';
             const label = `${emoji} ${description} ${displayCode}`;
             return {
                 label,
                 code,
                 emoji,
+                description: searchText
             };
         });
 
-        vscode.window.showQuickPick(items).then(function (selected) {
+        vscode.window.showQuickPick(items, { matchOnDescription: true }).then(function (selected) {
             if (selected) {
                 vscode.commands.executeCommand('workbench.view.scm');
                 let outputType = vscode.workspace.getConfiguration().get('gitmoji.outputType');
