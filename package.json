@@ -1,22 +1,22 @@
 {
     "name": "gitmoji-vscode",
-    "displayName": "Gitmoji",
-    "description": "Gitmoji tool for git commit messages in VSCode",
+    "displayName": "Gitmoji (fork)",
+    "description": "fork of Gitmoji github.com/seatonjiang/gitmoji-vscode",
     "version": "1.2.2",
     "author": {
-        "name": "Seaton Jiang",
-        "email": "hi@seatonjiang.com"
+        "name": "xshkut",
+        "email": "shkut.ap@gmail.com"
     },
-    "publisher": "seatonjiang",
+    "publisher": "xshkut",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/seatonjiang/gitmoji-vscode/issues"
+        "url": "https://https://github.com/xshkut/gitmoji-vscode/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/seatonjiang/gitmoji-vscode.git"
+        "url": "https://https://github.com/xshkut/gitmoji-vscode.git"
     },
-    "homepage": "https://github.com/seatonjiang/gitmoji-vscode/blob/main/README.md",
+    "homepage": "https://https://github.com/xshkut/gitmoji-vscode/blob/main/README.md",
     "engines": {
         "vscode": "^1.73.0"
     },
