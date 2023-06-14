@@ -13,7 +13,7 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🎨',
         code: ':art:',
         description: vscode.l10n.t('Improve structure/format of the code'),
-        searchText: "palette pretty refactor art",
+        searchText: "palette pretty refactor restructure art",
     },
     {
         emoji: '⚡️',
