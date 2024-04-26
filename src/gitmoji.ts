@@ -25,19 +25,19 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🔥',
         code: ':fire:',
         description: vscode.l10n.t('Remove code or files'),
-        searchText: "delete fire clean",
+        searchText: "delete fire clean remove rid",
     },
     {
         emoji: '🐛',
         code: ':bug:',
         description: vscode.l10n.t('Fix a bug'),
-        searchText: "worm",
+        searchText: "worm issue",
     },
     {
         emoji: '🚑',
         code: ':ambulance:',
         description: vscode.l10n.t('Critical hotfix'),
-        searchText: "bug ambulance",
+        searchText: "bug ambulance fix",
     },
     {
         emoji: '✨',
@@ -103,13 +103,13 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '🚧',
         code: ':construction:',
         description: vscode.l10n.t('Work in progress'),
-        searchText: "wip",
+        searchText: "wip dirty",
     },
     {
         emoji: '💚',
         code: ':green_heart:',
         description: vscode.l10n.t('Fix CI Build'),
-        searchText: "green heart",
+        searchText: "green heart pipeline",
     },
     {
         emoji: '⬇️',
@@ -121,7 +121,7 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '⬆️',
         code: ':arrow_up:',
         description: vscode.l10n.t('Upgrade dependencies'),
-        searchText: "import require",
+        searchText: "import require update",
     },
     {
         emoji: '📌',
@@ -203,12 +203,13 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '👽️',
         code: ':alien:',
         description: vscode.l10n.t('Update code due to external API changes'),
-        searchText: "alien",
+        searchText: "alien dependency import",
     },
     {
         emoji: '🚚',
         code: ':truck:',
         description: vscode.l10n.t('Move or rename resources (e.g.: files, paths, routes)'),
+        searchText: "port",
     },
     {
         emoji: '📄',
@@ -370,7 +371,7 @@ let Gitmoji: Array<gitmojiList> = [
         emoji: '⚰️',
         code: ':coffin:',
         description: vscode.l10n.t('Remove dead code'),
-        searchText: "unreachable unused old",
+        searchText: "unreachable unused old delete clean",
     },
     {
         emoji: '🧪',
